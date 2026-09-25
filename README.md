@@ -1,5 +1,13 @@
-- ***LOADING***
-<!---
-shrayrajpahwa/shrayrajpahwa is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+### shray pahwa
+
+builder. mba at berkeley haas. [someday studios](https://somedaystudios.xyz) · [x&y](https://xandyregression.substack.com) · [shrelly](https://shrelly.substack.com) · [linkedin](https://www.linkedin.com/in/shray-pahwa/)
+
+**writing**
+
+<!-- writing:start -->
+nothing yet.
+<!-- writing:end -->
+
+**data**
+
+- [x_and_y_data](https://github.com/shrayrajpahwa/x_and_y_data): the data and interactive chart behind every [x&y](https://xandyregression.substack.com) issue. [browse](https://shrayrajpahwa.github.io/x_and_y_data/)
