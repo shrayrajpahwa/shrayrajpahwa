@@ -1,0 +1,26 @@
+name: writing
+
+on:
+  schedule:
+    - cron: "30 15 * * *"  # 08:30 PT, after the 07:00 PT x&y send
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/writing.py
+      - name: commit if changed
+        run: |
+          if git diff --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "writing: latest posts"
+          git push
